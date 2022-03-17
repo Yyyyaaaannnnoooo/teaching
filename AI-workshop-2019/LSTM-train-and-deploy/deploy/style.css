@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:600|Source+Code+Pro:600');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#status{
+    /* style the status */
+    background-color: #00f;
+    color: #0f0;
+    padding: 0.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#seed{
+    /* style the seed text */
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 200px;
+    height: 300px;
+    outline: solid 2px #00f;
+}
+#sliders{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 200px;
+    height: auto;
+    outline: solid 2px #00f;
+}

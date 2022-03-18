@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIME_SERIES</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width: 5000px;
+      height: 5000px;
+      transition: all 1s;
+    }
+
+    p {
+      position: absolute;
+      padding: 25% 50% 25% 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="1" style="left: 200px; top:800px">
+    1 <br>
+    <a href="#2">next</a> <br>
+  </p>
+  <p id="2" style="left: 1200px; top:3000px">
+    2 <br>
+    <a href="#3">next</a> <br> <a href="#1">back</a>
+  </p>
+  <p id="3" style="left: 2000px; top:150px">
+    3 <br>
+    <a href="#4">next</a> <br> <a href="#2">back</a>
+  </p>
+</body>
+
+</html>

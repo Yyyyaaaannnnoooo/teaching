@@ -2,7 +2,7 @@
 
 > take a series of time defined actions of your day, and link them together with #id so that they are accessible in order or in disorder 😉
 
-## Advanced exercise
+## Advanced exercise (group exercise)
 
 > make a script in javascript to smoothly scroll to a specific #tag.
 
@@ -10,6 +10,7 @@ What to look for on the internet:
 
 - `Window.scrollTo()` => https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo
 - `Element.getBoundingClientRect()` => https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+- linear interpolation
 
 ## Skills:
 
@@ -62,7 +63,7 @@ What to look for on the internet:
 
 `mkdir directory_name` = create emty directory
 
-#### Exercise 1
+#### Exercise #1
 
 > Create a folder with the current directory structure:
 
@@ -110,7 +111,7 @@ the `index.html` should look like this
 
 #### end of exercise
 
-#### Exercise 2
+#### Exercise #2
 
 > in the same directory as the previous exercise create a directory called data where you will create an html file for each day of the past week from last friday to yesterday, and naming them accordingly. Than in the index.html file that you created in the previous exercise link all of the days in the data folder with the a tag
 
@@ -136,20 +137,128 @@ each file `day_of_the_week.html` should look like this
 
 ### css pseudo classes and transitions
 
-- given the previous exercise create id for each a tag that links to a `day_of_the_week.html`, it should look like this:
+> given the previous exercise create id for each a tag that links to a `day_of_the_week.html`, it should look like this:
 
 ```html
 <a href="link/to/day_of_the_week.html" id="day-of-the-week">day of the week</a>
 ```
 
-- then style such id according to your personal aesthetic taste. Therefore go to your `style.css` file and change it accrodingly, it should look like this:
+> then style such id according to your personal aesthetic taste. Therefore go to your `style.css` file and change it accrodingly, it should look like this:
 
 ```css
 body {
   background-color: #33f;
 }
 
-#day-of-the-week {
+a#day-of-the-week {
   /* put here some styling that ou like */
 }
 ```
+
+> Why are `<a>` tags colored different? can we overwrite the default? And why it changes color when it is clicked? In the `style.css` create a new field for the `a#day-of-the-week` and append `:visited`
+
+```css
+body {
+  background-color: #33f;
+}
+
+a#day-of-the-week {
+  /* put here some styling that ou like */
+}
+
+a#day-of-the-week:visited {
+  /* put here some additional styling for when the link is visited */
+}
+```
+
+Try to use the css [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms) property. To create the code try using this online helper: https://css-transform.moro.es/
+
+**Hint #1**: to reset the `:visited` tags try erasing your browsing history.
+
+**Hint #2**: try using `display: block` in your css.
+
+#### Exercise #1
+
+> add `:hover` in your `<a>` tag, and style in some way. Afterwards create an a field in your css file and add transition details. the `style.css` should look like this
+
+```css
+body {
+  background-color: #33f;
+}
+
+a#day-of-the-week {
+  /* put here some styling that ou like */
+}
+
+a#day-of-the-week:visited {
+  /* put here some additional styling for when the link is visited */
+}
+
+a#day-of-the-week:hover {
+  /* put here some additional styling for when the link is hovered */
+}
+
+a {
+  transition: all 1s;
+  /* try to play with the seconds */
+}
+```
+
+#### Exrcise #2
+
+> Instead of linking external pages, create 7 `div#day-of-the-week` inside the document. Than remove the id from the `<a>` tags and link them to the ids. The `index.html` file should look like this
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>some title</title>
+    <!-- here you should link your css using the link tag -->
+    <!-- here you should link the js file using the script tag -->
+  </head>
+
+  <body>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+    <a href="#day-of-the-week">day of the week</a>
+
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+    <div id="day-of-the-week">
+      <p>something about this day</p>
+    </div>
+  </body>
+</html>
+```
+
+#### Exercise #3
+
+> make the links into a menu using the `position: fixed` css method. Then style the divs so that they do not overlap with the menu. In this case take advantage of the `margin` or the `padding` method. For the skilled coders try to make an horizontal scroll instead of vertical one. for the coders who don't care about scroll direction try to take advatage of both scrolling directions
+
+#### Exercise #4
+
+> Populate the divs with data about your week. If you don't want it to be about yourself then invent it. If you don't want it to be about the week than choose another topic. The only rule is to have consistent data linked to each other.
+
+## From 14:30 we will do a short show and tell

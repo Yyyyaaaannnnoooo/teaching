@@ -8,9 +8,8 @@
 
 What to look for on the internet:
 
-- `Window.scrollTo()` => https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo
-- `Element.getBoundingClientRect()` => https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-- linear interpolation
+- `Window.scrollIntoView()` => https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+- used [here](https://s4ac.github.io/classes/2019FS@HGK_IXDM/unmake_all/)
 
 ## Skills:
 

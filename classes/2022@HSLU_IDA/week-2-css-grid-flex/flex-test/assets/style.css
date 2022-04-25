@@ -1,0 +1,70 @@
+:root{
+    /* define your own variables and have a sigle place to change them */
+    --red: #f33;
+    --green: #3f3;
+    --blue: #33f;
+    --orange: #fc3;
+    --yellow: #ff3;
+    --purple: #c3f;
+    --cyan: #3ff;
+    --grey: #ccc;
+    --black: #000;
+    --background: #ccf;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    /* max-width: 400px; */
+    margin: 10px;
+    box-shadow: #000 5px 5px 10px;
+}
+.red{
+    background-color: var(--red);
+    align-self: flex-start;
+}
+.green{
+    background-color: var(--green);
+}
+.blue{
+    background-color: var(--blue);
+    /* flex-grow: 2; */
+}
+.orange {
+    background-color: var(--orange);
+    flex-grow: 10;
+}
+.yellow {
+    background-color: var(--yellow);
+    align-self: flex-end;
+}
+.purple {
+    background-color: var(--purple);
+}
+.cyan {
+    background-color: var(--cyan);
+    align-self: flex-end;
+}
+.grey {
+    background-color: var(--grey);
+}
+.black {
+    background-color: var(--black);
+}

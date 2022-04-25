@@ -1,0 +1,61 @@
+:root{
+    /* define your own variables and have a sigle place to change them */
+    --water: #33f;
+    --leaves: #3f3;
+    --grains: #fc3;
+    --meat: #f33;
+    --legumes: #c3f;
+    --background: #ccf;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.food{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: #000 5px 5px 10px;
+    overflow-y: scroll;
+}
+
+.water{
+    background-color: var(--water);
+}
+.leaves{
+    background-color: var(--leaves);
+}
+.grains{
+    background-color: var(--grains);
+}
+.meat{
+    background-color: var(--meat);
+}
+.legumes{
+    background-color: var(--legumes);
+}
+.card{
+    width: 25%;
+    margin: 2%;
+    height: 100px;
+    box-shadow: #000 3px 3px 5px;
+    background-color: var(--background);
+    display: flex;
+}
+.title{
+    font-size: 1.5rem;
+}
+.image{
+    width: 100px;
+    height: 100px;
+}

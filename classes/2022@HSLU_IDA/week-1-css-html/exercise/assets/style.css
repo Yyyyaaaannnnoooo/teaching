@@ -1,0 +1,153 @@
+body {
+    background: #33f;
+}
+
+a {
+    color: #fff;
+    display: block;
+    transition: all 2s;
+}
+
+#freitag {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3f3;
+    padding: 0.5rem;
+    left: 350px;
+    top: 500px;
+}
+
+#freitag:hover {
+    color: #33f;
+    background-color: rgb(157, 233, 27);
+    /* !!TRANSFORM!! */
+    transform: rotate(10deg) rotateY(30deg) rotateZ(24deg) perspective(700px);
+    transform-origin: center center;
+}
+
+#samstag {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f33;
+    padding: 0.5rem;
+    left: 1000px;
+    top: 1000px;
+}
+
+#samstag:hover {
+    color: #f33;
+    background-color: rgb(157, 233, 27);
+    transform: rotateX(30deg) rotateY(30deg) perspective(1100px);
+    transform-origin: center center;
+}
+
+#sonntag {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fc3;
+    padding: 0.5rem;
+    left: 1500px;
+    top: 350px;
+}
+
+#sonntag:hover {
+    color: #fc3;
+    background-color: rgb(157, 233, 27);
+    transform: rotateX(62deg) rotateY(166deg) perspective(1100px);
+    transform-origin: center center;
+}
+
+#montag {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3cf;
+    padding: 0.5rem;
+
+    top: 1500px;
+    left: 2000px;
+}
+
+#montag:hover {
+    color: #3cf;
+    background-color: rgb(157, 233, 27);
+    transform: rotateX(32deg) rotateY(134deg) rotateZ(84deg) perspective(1100px);
+    transform-origin: center center;
+}
+
+#dienstag {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f3c;
+    padding: 0.5rem;
+
+    top: 2000px;
+
+    left: 2500px;
+}
+
+#dienstag:hover {
+    color: #f3c;
+    background-color: rgb(157, 233, 27);
+
+    transform: rotate(45deg) rotateX(45deg) rotateZ(45deg) perspective(700px);
+    transform-origin: center center;
+}
+
+#mittwoch {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3cf;
+    padding: 0.5rem;
+
+    top: 500px;
+
+    left: 3000px;
+}
+
+#mittwoch:hover {
+    color: #3cf;
+    background-color: rgb(157, 233, 27);
+    transform: rotate(108deg) rotateY(277deg) rotateZ(84deg) perspective(700px);
+    transform-origin: center center;
+}
+
+#donnerstag {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    padding: 0.5rem;
+
+    top: 3000px;
+    left: 500px;
+}
+
+#donnerstag:hover {
+    color: #333;
+    background-color: rgb(157, 233, 27);
+    transform: rotate(10deg) rotateX(23deg) rotateZ(9deg) perspective(700px);
+    transform-origin: center center;
+}
+
+
+.menu {
+    z-index: 99999999;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    width: max-content;
+}
+
+.day {
+    position: absolute;
+    width: max-content;
+    transition: all 2s;
+}
+
+
+div:hover {
+    mix-blend-mode: difference;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}

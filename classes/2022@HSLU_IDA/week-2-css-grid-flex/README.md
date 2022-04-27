@@ -186,6 +186,6 @@ food-info/
 
 # Afternoon Session
 
-## Group Presentations 13 => 14
-
 ## Individual consultations
+
+## Group Presentations 14 => 15

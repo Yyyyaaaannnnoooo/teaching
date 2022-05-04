@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-follower</title>
+    <script src="assets/js/script.js"></script>
+    <style>
+        #save-button,
+        #load-button {
+            cursor: pointer;
+            background-color: aqua;
+            z-index: 9999999999999;
+            position: fixed;
+            bottom: 0px;
+            left: 100px;
+            width: 10%;
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #load-button {
+            left: 200px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <img src="https://img.icons8.com/ios/50/000000/cursor--v1.png" style="width: 16px; height: auto; position: fixed;">
+
+
+    <div id="save-button">
+        SAVE JSON
+    </div>
+    <div id="load-button">
+        <input type="file" id="myFile" name="filename">
+        load JSON
+    </div>
+</body>
+
+</html>

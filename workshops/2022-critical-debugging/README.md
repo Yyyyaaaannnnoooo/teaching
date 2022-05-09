@@ -1,7 +1,7 @@
 # Critical De-bugging Teaching Method
 
 The past years of technological development has seen a growing distrust in the tools that are used in everyday life. The commodification of human attention in advertising revenue and the coming finacialization of everyday life with blockchain technology is going under more attentive scrutiny from governments around the world.
-The general awareness of this technological failures, and false promises has be brought forward, not only by academics but also artists and designers who challenge the technological given, by exerting their right to critique.
+The general awareness of this technological failures, and false promises has been brought forward, not only by academics but also artists and designers who challenge the technological given, by exerting their right to critique.
 Critique in this case and for the purpose of this teaching format is intended as a bottom-up action to question what is given i.e. "normal", accepted or imposed by society at large.
 Critical studies of AI and technology have already shown the biases intrinsic to such systems, and the reproduction of racial and gender inequality.
 Debugging or better said de-bugging becomes an abstraction of its original purpose; namely the removal of error that make a computer program crash. For this teaching format de-bugging becomes a twofold activity: 

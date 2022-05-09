@@ -2,45 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mouse-follower</title>
-    <script src="assets/js/script.js"></script>
-    <style>
-        #save-button,
-        #load-button {
-            cursor: pointer;
-            background-color: aqua;
-            z-index: 9999999999999;
-            position: fixed;
-            bottom: 0px;
-            left: 100px;
-            width: 10%;
-            font-size: 2rem;
-            font-family: 'Courier New', Courier, monospace;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mouse-follower</title>
+  <script src="assets/js/script.js"></script>
+  <style>
+    .btn-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: space-between;
+      width: 100vw;
+      position: fixed;
+      bottom: 0px;
+    }
 
-        #load-button {
-            left: 200px;
-        }
-    </style>
+    #save-button,
+    #load-button {
+      cursor: pointer;
+      background-color: aqua;
+      z-index: 9999999999999;
+      font-size: 2rem;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
+    }
+
+    #save-button:hover,
+    #load-button:hover {
+      background-color: #f33;
+    }
+
+    #load-button {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
 
 
 </head>
 
 <body>
 
-    <img src="https://img.icons8.com/ios/50/000000/cursor--v1.png" style="width: 16px; height: auto; position: fixed;">
+  <img src="https://img.icons8.com/ios/50/000000/cursor--v1.png" style="width: 16px; height: auto; position: fixed;">
 
 
+  <div class="btn-container">
     <div id="save-button">
-        SAVE JSON
+      SAVE JSON
     </div>
     <div id="load-button">
-        <input type="file" id="myFile" name="filename">
-        load JSON
+      <input type="file" id="myFile" name="filename">
+      load JSON
     </div>
+  </div>
 </body>
 
 </html>

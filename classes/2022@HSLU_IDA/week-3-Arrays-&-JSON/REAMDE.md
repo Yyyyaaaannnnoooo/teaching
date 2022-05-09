@@ -33,14 +33,7 @@ for (let i = 0; i < 10; i++) {
   let rand = Math.random() * 100;
   array.push(rand);
 }
-// console.log(this);
-// console.log(filled_array);
 
-// get content of an array
-// explain .length
-
-// console.log(array[5])
-// array[50] = 50;// this is very bad syntax
 
 for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
@@ -48,6 +41,16 @@ for (let i = 0; i < array.length; i++) {
 
 for (let element of array) {
   console.log(element);
+}
+
+// array inception
+outer_array = []
+for(let i = 0; i < 10; i++){
+  inner_array = []
+  for(let j = 0; j < 10; j++){
+    inner_array.push(j)
+  }
+  outer_array.push(inner_array)
 }
 
 // remove elements from the array
@@ -112,8 +115,43 @@ Object.keys(user).forEach(key => {
 
 - three things needed:
 
-  1. `document.onmousemove = (e) => {}`
+  1. `document.onmousemove = (e) => {}` to record the mouse
 
-  2. `window.requestAnimationFrame()`
+  2. `window.requestAnimationFrame()` to animate the mouse movements
 
-  3. a cursor from [here](https://icons8.com/icons/set/cursor)
+  3. `document.onkeypressed = () => {}` to record our mouse movements
+
+  4. a cursor from [here](https://icons8.com/icons/set/cursor)
+
+  5. load and save JSON || Please copy and paste
+
+  ```javascript
+  // save JSON data
+  let save_button = document.querySelector("#save-button");
+  save_button.addEventListener("click", () => {
+    console.log("clicked");
+    let data = JSON.stringify(mouse_movements); // <= !!! this needs to match your mouse_movements array !!!
+    let blob = new Blob([data], { type: "application/json" });
+    let url = URL.createObjectURL(blob);
+    let a = document.createElement("a");
+    a.href = url;
+    a.download = "mouse_movements" + Date.now().toString() + ".json";
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // load JSON data
+  let load_button = document.querySelector("#load-button");
+  load_button.addEventListener("click", () => {
+    console.log("clicked");
+    let input = load_button.querySelector("input");
+    let file = input.files[0];
+    let reader = new FileReader();
+    reader.onload = (event) => {
+      let data = JSON.parse(event.target.result);
+      mouse_movements = data;
+      console.log(mouse_movements); // <= !!! this needs to match your mouse_movements array !!!
+    };
+    reader.readAsText(file);
+  });
+  ```

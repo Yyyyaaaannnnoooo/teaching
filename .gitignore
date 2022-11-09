@@ -47,7 +47,8 @@ Temporary Items
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
-# ignore emails
+# ignore emails and sensitive material
 
 classes/2022@HSLU_IDA/stud-emails.txt
 classes/2022@HSLU_IDA/202205-midterm.md
+classes/2022@HSLU_IDA/20220520-zwischenpraesi.md

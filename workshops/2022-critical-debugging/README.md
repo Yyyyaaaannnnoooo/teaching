@@ -22,3 +22,17 @@ In the scope of this teaching format the class will use browser built in debuggi
 
 **Yann Patrick Martins** is a coder, artist and doctoral candidate of the Make/Sense Phd Programme, currently working at the IXDM as Research Assistant. Despite his practice rooted in programming, his doctoral research looks at the ways in which capitalist mode of production and machine learning are re-enacting forms of inequality and discrimination. He also has pioneered a teaching programme at the Critical Media Lab Basel that links technological education and cooking practices since 2018.
 
+
+
+
+
+1. bring the two proposed appraoches into text. How did I searched for social errors within youtube recommender algorithm?
+   1. list the initial research question => where does AI come from and wht is its relation to data?
+   2. how did you come to debugging => datafication / data extractivism happens on your computer!
+   3. machine ownership means you can look into it and look at what happens
+   4. how does it become pedagogical => list the steps you took to find out about hovering data: the "researchy" / forensic approach to it and how it fosters technical and critical competences
+
+2. "good" artists are rhyzomatic
+   1. deleuze and the drum machine
+   2. artists and art
+   3. rhyzomatism as intrinsic to "good" art, deep knowledge and critique. but not in the sense of professionalism: expertise without bragging.

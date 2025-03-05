@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.video-view,
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    border: solid #33f;
+    background-color: #ddd;
+}
+
+.btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    border: solid #33f;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.75rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn:hover {
+    box-shadow: #33f 5px 5px 10px;
+}
+
+.media-container {
+    position: relative;
+    margin-top: 2rem;
+    /* border: solid #33f; */
+    /* border-radius: 10px; */
+}
+
+.webcam {
+    display: none;
+    border: solid #33f;
+    border-radius: 10px;
+}
+
+.output_canvas {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.blend-shapes {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blend-shapes-value {
+    position: absolute;
+    width: auto;
+    background-color: #f33;
+}
+
+#face, #facemesh {
+    position: fixed;
+    width: 75%;
+    height: 75vh;
+    background-color: bisque;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#facemesh{
+    background-color: transparent;
+    border: solid 5px red;
+}
+
+#left-eye, #right-eye {
+    position: fixed;
+    /* left: 100px; */
+    top: 15%;
+    height: 10%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: solid 3px black;
+    transform: translate(-50%, -50%);
+}
+
+#left-eye{
+    /* left: 10%; */
+}
+
+#right-eye {
+    /* right: 10%; */
+    background-color: #f33;
+}
+
+#mouth {
+    position: fixed;
+    width: 20%;
+    height: 20px;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: solid 10px #f33;
+}
+
+.dot{
+    position: fixed;
+    font-size: 10px;
+}

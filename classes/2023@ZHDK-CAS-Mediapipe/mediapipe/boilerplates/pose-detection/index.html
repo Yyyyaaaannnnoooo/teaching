@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pose-Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h2>Webcam continuous pose landmarks detection</h2>
+    <p>Stand in front of your webcam to get real-time pose landmarker detection.</br>Click <b>enable webcam</b>
+      below
+      and grant access to the webcam if prompted.</p>
+  </header>
+
+  <section id="demos" class="invisible">
+    <div id="liveView" class="video-view">
+      <button id="webcamButton" class="btn">
+        <span class=""></span>
+        <span class="">ENABLE WEBCAM</span>
+      </button>
+      <div class="media-container">
+        <video id="webcam" class="webcam" autoplay playsinline></video>
+        <canvas class="output_canvas" id="output_canvas" width="1280" height="720"
+          style="position: absolute; left: 0px; top: 0px;"></canvas>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

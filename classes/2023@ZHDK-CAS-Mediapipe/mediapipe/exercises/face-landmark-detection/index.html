@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>face-landmark</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Face Landmarker</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js" integrity="sha512-uaz5GpnQoE6t5echKlX8P52czvsIGgLPcvlzfvRubLZ1Hp8JemUDnbUiAahbVtPb+jUVrNETuXvAhDDF/N3M4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+
+  <section id="demos" class="invisible">
+    <div id="liveView" class="video-view">
+      <button id="webcamButton" class="btn">
+        <span class=""></span>
+        <span class="">ENABLE WEBCAM</span>
+      </button>
+      <div class="media-container">
+        <div class="center" id="p5"></div>
+        <video id="webcam" class="webcam" autoplay playsinline></video>
+        <canvas class="output_canvas" id="output_canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

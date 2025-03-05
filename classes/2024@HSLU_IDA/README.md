@@ -1,0 +1,2 @@
+# teaching material for IDA Modul @HSLU in Luzern
+> This collection of exercise was developed to have the students work with the RiTa library to work with text, as well as working with audio in and outside the browser.

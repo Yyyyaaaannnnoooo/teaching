@@ -3,6 +3,7 @@ This repository is a collection of more or less detailed and documented classes 
 With a focus on care, justice, and ethical responsibility, my approach encourages students to consider the social impact of digital tools and the ways technology can be shaped to support collective well-being.
 
 ## GO TO [CLASSES](https://github.com/Yyyyaaaannnnoooo/teaching/tree/main/classes)
+## GO TO [Talks & Seminars](https://github.com/Yyyyaaaannnnoooo/teaching/tree/main/classes/talks%26seminars)
 
 ## 🪼🪼 Students Outputs 🪼🪼
 

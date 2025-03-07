@@ -170,3 +170,4 @@ food-info/
 
 # Afternoon Session
 ## Group Presentations 13 => 14
+## Food infographic using `display: grid`

@@ -1,0 +1,23 @@
+#p5{
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.blue-big-text {
+  color: blue;
+  font-size: 25px;
+}
+
+
+.italic-red-medium{
+  position: fixed;
+  top: 20px;
+  left: 300px ;
+  font-size: 1.5rem;
+  color: rgb(255, 0, 255);
+  color: red;
+  color: #f00;
+  color: rgba(255, 0, 255, 0.5);
+}

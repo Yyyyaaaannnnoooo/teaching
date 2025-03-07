@@ -1,0 +1,8 @@
+# Synthetic-Normal
+> Vertiefungsmodul Interdisziplinär 3. Semester HS22
+
+## Topic
+ML-based systems have become ubiquitous and embedded in decision-making processes – in some cases the predictions of such systems are used to assess the credibility and liability of a citizen. Banks, insurance companies, governmental institutions are just a few entities that leverage these technologies to compute a “Synthetic Normal”. Meanwhile, a growing number of adversarial attacks have been developed to escape the tyranny of this synthetisation of digital information. Data poisoning, for example, has been applied to social media platforms to obfuscate user traits and reduce the potency of their advertising models. However, such infected data has an inherent drawback – patterned data streams become very visible to the system; therefore prompting further analysis. “Synthetic Normal” questions the tension between the inherent biases of machine learning algorithms, the optimism for more equitable and inclusive datasets, and the material preemption such systems impose on society, by making visible the mathematical subtractions the machine would need to compute in order to make the viewer fit the normal.
+
+## Goals
+During the course we will investigate machine learning tools for content creation, using notebooks on Google Collab, APIs and writing own bots to create fake user profiles. We will explore different approaches to counter disobedient AI that revolve around the creation of the "Synthetic Normal". Based on the user data the system will have the ability to average the “out of the norm” qualities. 

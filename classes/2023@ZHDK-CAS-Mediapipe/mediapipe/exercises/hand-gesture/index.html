@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hand gesture detection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"
+    integrity="sha512-uaz5GpnQoE6t5echKlX8P52czvsIGgLPcvlzfvRubLZ1Hp8JemUDnbUiAahbVtPb+jUVrNETuXvAhDDF/N3M4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="liveView" class="video-view">
+      <button id="webcam-button" class="btn">
+        <span>ENABLE WEBCAM</span>
+      </button>
+      <button class="btn" id="debug">HIDE HAND</button>
+      <div class="media-container">
+        <div class="center" id="p5"></div>
+        <video id="webcam" class="webcam" autoplay playsinline></video>
+        <canvas class="output_canvas center" id="output_canvas" width="480" height="360"></canvas>
+        <!-- <p id='gesture_output' class="output"> -->
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>

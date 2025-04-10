@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 #p5Sketch{
   position: fixed; /* or relative or whatever you decide */
   /* width: you define it!; */

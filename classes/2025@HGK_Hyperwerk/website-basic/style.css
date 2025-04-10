@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#p5Sketch {
+  position: fixed;
+  /* or relative or whatever you decide */
+  /* width: you define it!; */
+  /* height: you define it!; */
+  /* i usually do full screen */
+}
+
+
+h1 {
+  color: #3333ff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+footer {
+  color: black;
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+
+  background-color: #319950d0;
+
+  width: 100%;
+  height: 300px;
+
+  /* float: left; */
+
+  text-align: center;
+
+  /* how are my child elements layouted? */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+div {
+  margin: 20px
+}

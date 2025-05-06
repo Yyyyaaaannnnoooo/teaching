@@ -1,4 +1,4 @@
-# Early Computer Art
+# Early Computer Art (30.04.2025)
 
 
 ## References:
@@ -15,8 +15,6 @@ Rules and ruleset what can I improve by changing how the algorithm works.
 
 "Daily prompts" for advanced students
 
-
-## Code
 
 ### Sol Levitt
 
@@ -43,7 +41,132 @@ Rules and ruleset what can I improve by changing how the algorithm works.
 * how to apply randomness selectvely
 
 
+## Code Examples
+### Boilerplate
 
-### Presentation
-Group presentation of other group work in circular fashion
-g1 presents g2 => g2 presents => g3 g3 presents g4 => g4 presents g5 => g5 presents g1
+```javascript
+function setup() {
+    // happens only once at page load
+    // input: width, height
+    createCanvas(600, 600)
+    // input color, (r, g, b) OR (0 => 255) for B/W
+    background(127)
+}
+
+function draw() {
+
+}
+```
+
+### Draw a single Square
+
+```javascript
+function setup() {
+    // happens only once at page load
+    // input: width, height
+    createCanvas(600, 600)
+    // input color, (r, g, b) OR (0 => 255) for B/W
+    background(127)
+}
+
+function draw() {
+  // square takes 3 values:
+  // x, y, size of the edges
+  square(0, 0, 200)
+}
+```
+
+### Multiple squares with for loop
+
+```javascript
+for (let i = 0; i < 20; i++) {
+  fill(255)
+  // square distributed along x axis
+  square(i * (20 + 10), 230, 20)
+}
+
+for (let i = 0; i < 20; i++) {
+  noFill()
+  stroke(255)
+	// stacking squares with no fill
+  square(width - 200, 0, 10 * i)
+}
+
+```
+
+### Nested for loops and if statement mixup convolution of doom
+
+```javascript
+// first loop 
+for (let i = 0; i < 20; i++) {
+  // second loop 
+  // be careful with curly brackets!!!!
+  for (let j = 0; j < 10; j++) {
+    noFill()
+    // series of if statement to define 
+    // the fill color depending on i and j
+    // from the for loops
+    if (i >= 10) {
+      fill(0, 255, 0)
+    }
+    if (j >= 5) {
+      fill(255, 0, 0)
+    }
+    if (j >= 5 && i >= 10) {
+      fill(0, 0, 255)
+    }
+    // draw square at x position = i
+    // draw square at y position = j
+    square(i * (20 + 10), 290 + j * (20 + 10), 20)
+  }
+}
+```
+
+### for loop and rotation in place
+
+```javascript
+for (let i = 0; i < 20; i++) {
+  rectMode(CENTER)
+  noFill()
+  stroke(255, 0, 0)
+  // push and pop 
+  // help in applying 
+  // transformations
+  // to primitives in dividually
+  push()
+  // always use translate
+  // as first isntruction
+  translate(300, 100)
+  // than rotate
+  rotate(i * PI / 19)
+  // since primitve is translated
+  // x, y needs to be set to 0
+  square(0, 0, 10 * i)
+  pop()
+}
+```
+
+### smoothing jittery values
+
+```javascript
+// Thanks to Ted Davis!!!
+/* VALUE SMOOTHING */
+function smoothVal(inputVal, outputVal) {
+  let tarVal = inputVal;
+  let calcVal = tarVal - outputVal;
+  outputVal += calcVal * easing;
+  return outputVal;
+}
+```
+
+
+
+# Presentation Sprint 1 (06.05.2025)
+
+## TO DO:
+* all students have a github account
+* work with HTML and CSS for web protfolio
+* print their work
+
+### Group presentation of other group work in circular fashion
+g1 presents g2 => g2 presents g3 => g3 presents g4 => g4 presents g5 => g5 presents g1

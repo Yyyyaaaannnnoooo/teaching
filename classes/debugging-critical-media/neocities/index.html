@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funky garden 🪼</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
+    <style>
+      body {
+        background-color: rgb(129, 173, 90);
+        background-image: url(images/giphy-02.gif);
+        background-size: 50%;
+        color: red;
+      }
+
+      .container {
+        position: absolute;
+        float: left;
+        left: 100px;
+        top: 200px;
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        color: blue;
+      }
+
+      .green-title {
+        color: chartreuse;
+        text-shadow: black 0px 0px 10px;
+        transition: all 1s;
+      }
+
+      .green-title:hover {
+        color: black;
+        font-size: 200px;
+      }
+
+      img {
+        width: 60%;
+      }
+
+      /* CSS styling for the p5.js canvas container */
+      #p5 {
+        z-index: 99999999999; /* Extremely high stacking order - ensures canvas appears above almost all other elements */
+        position: fixed; /* Fixes the element relative to the viewport (stays in place when scrolling) */
+        top: 200px; /* Positions the element 200px from the top of the viewport */
+        left: 200px; /* Positions the element 200px from the left of the viewport */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    p5.js canvas container div
+    - This div acts as a container for the p5.js canvas element
+    - The p5.js library will attach the canvas to this div
+    - when declared in the function setup()
+    //////////// JS ////////////
+    - let canvas = createCanvas(600, 400);
+    - canavs.parent("#p5");
+    ///////////// END ///////////
+    - Without this div, the canvas would be appended to the end of the body
+    - The fixed positioning allows the canvas to float over other content
+  -->
+
+    <div id="p5"></div>
+
+    <div class="container">
+      <h1 class="green-title">Funky Garden</h1>
+      <h2 class="green-title">sub title</h2>
+      <p>my best essay is written here. ...</p>
+      <img src="/images/JDZZQM.gif" alt="" />
+    </div>
+
+    <script>
+      // SETUP FUNCTION - runs once at the beginning
+      function setup() {
+        // Creates a canvas that fills the entire browser window
+        // createCanvas(windowWidth, windowHeight);
+        let canvas = createCanvas(600, 400);
+        canavs.parent("#p5");
+        // Sets initial background to black
+        background(0);
+
+        // Sets rectangle drawing mode to CORNER (default)
+        // This means x,y coordinates
+        // specify the top-left corner of rectangles
+        rectMode(CORNER);
+
+        // rectMode(CENTER)
+        // Would center the square on coordinates
+      }
+
+      // Global variables for position and size of the main square
+      let x = 10; // x-coordinate position
+      let y = 10; // y-coordinate position
+      let size = 10; // size of the square (width and height)
+
+      function draw() {
+        // DRAW FUNCTION - runs continuously (about 60 times per second)
+
+        // Clears the canvas with black each frame (creates animation effect)
+        background(0);
+
+        noFill();
+        // rotate a square (commented out code block)
+        // This section would create a rotating square if uncommented
+        stroke(255); // Sets stroke color to white
+
+        // move a square across the canvas
+        x = x + 2; // Increments x position by 2 pixels each frame (moves right)
+        y = 10; // Fixed y position at 10 pixels from top
+        square(x, y, size); // Draws the square at current (x,y) position
+
+        // return the square to the beginning
+        if (x > width) {
+          // If square moves beyond right edge of canvas
+          x = 0; // Reset to left edge
+        }
+
+        // multiple square marching on the screen
+        // Creates a grid of squares moving horizontally
+        // Outer loop: creates 5 rows
+        for (let i = 0; i < 5; i++) {
+          // Calculates vertical position for each row
+          let h = y * (i + 1) * 13;
+          // h increases with each row: row1: 130, row2: 260, etc.
+          // it is also possible to nest loops
+          for (let j = 0; j < 3; j++) {
+            // Inner loop: creates 3 squares per row
+            w = x + (j + 1) * (size + 20);
+            // Calculates horizontal position
+            // w creates spacing between squares in each row
+            // Squares are placed with 120px gaps (size 100 + 20)
+
+            square(w, h, size);
+            // Draws square at calculated position
+          }
+        }
+        // Total squares drawn: 5 rows × 3 columns = 15 squares
+      }
+    </script>
+  </body>
+</html>

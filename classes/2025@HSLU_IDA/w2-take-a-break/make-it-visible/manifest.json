@@ -1,0 +1,33 @@
+{
+  "description": "Making the invisible visible",
+  "manifest_version": 2,
+  "name": "Unveil the Data Infrastructure",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "p5.min.js",
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "cat.png"
+  ],
+  
+  "permissions": [
+    "tabs",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}

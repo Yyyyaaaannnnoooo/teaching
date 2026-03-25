@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5-sketch-000</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+    <!-- IMPORTANT: import the p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
+  </head>
+  <body></body>
+<!--
+  After the body you can add a script tag
+  within this tag you can add the code
+  that you developed in P5Live
+-->
+  <script>
+    /*	_webgl_primatives // cc teddavis.org 2019	*/
+
+    let v = 0.3;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight, WEBGL);
+      angleMode(DEGREES);
+    }
+
+    function draw() {
+      background(0);
+      orbitControl(5);
+
+      ortho();
+
+      if (mouseIsPressed) {
+        lights();
+        noStroke();
+        fill(255);
+      } else {
+        stroke(255);
+        noFill();
+      }
+
+      push();
+      translate(rPos(0));
+      rotateX(frameCount / 4);
+      rotateZ(frameCount / 2);
+      plane(150, 150);
+      pop();
+
+      push();
+      translate(rPos(50));
+      rotateX(frameCount / 4);
+      rotateZ(frameCount / 2);
+      box(150);
+      pop();
+
+      push();
+      translate(rPos(100));
+      rotateX(frameCount / 4);
+      rotateY(frameCount / 4);
+      sphere(100);
+      pop();
+
+      push();
+      translate(rPos(150));
+      rotateX(frameCount / 4);
+      rotateY(frameCount / 4);
+      ellipsoid(100, 30);
+      pop();
+
+      push();
+      translate(rPos(200));
+      rotateY(frameCount / 2);
+      rotateX(frameCount / 3);
+      cone(100, 150);
+      pop();
+
+      push();
+      translate(rPos(250));
+      rotateX(frameCount / 4);
+      rotateZ(frameCount / 3);
+      torus(100, 50);
+      pop();
+
+      push();
+      translate(rPos(300));
+      rotateY(frameCount / 2);
+      rotateZ(frameCount / 4);
+      cylinder(100, 100);
+      pop();
+    }
+
+    function rPos(off) {
+      let x = (sin(off + frameCount * v) * width) / 3;
+      let y = (cos(off + frameCount * v) * height) / 3;
+      return createVector(x, y);
+    }
+  </script>
+</html>

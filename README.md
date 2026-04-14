@@ -7,6 +7,8 @@ With a focus on care, justice, and ethical responsibility, my approach encourage
 
 ## 🪼🪼 Students Outputs 🪼🪼
 
+* [Colabor 2026 @ HSLU](https://github.com/digitalideation/colabor2026/tree/main?tab=readme-ov-file)
+* [Colabor 2025 @ HSLU](https://github.com/digitalideation/colabor2025)
 * [Colabor 2024 @ HSLU](https://digitalideation.github.io/colabor2024/) | in collaboration with [Hanna Züllig](https://www.hannazuellig.ch/) and [Stefanie Bräuer](https://stefaniebraeuer.ch/)
 * [Colabor 2023 @ HSLU](https://github.com/digitalideation/colabor2023?tab=readme-ov-file#repos-studierende) | in collaboration with [Hanna Züllig](https://www.hannazuellig.ch/) and [Stefanie Bräuer](https://stefaniebraeuer.ch/)
 * [Colabor 2022 @ HSLU](https://ida-2022.netlify.app/) | in collaboration with [Hanna Züllig](https://www.hannazuellig.ch/) and [Stefanie Bräuer](https://stefaniebraeuer.ch/)

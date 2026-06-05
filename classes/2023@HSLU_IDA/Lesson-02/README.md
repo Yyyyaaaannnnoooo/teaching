@@ -32,7 +32,7 @@ const s = function (p5){
   p5.setup = function(){
     // local variables can also be declared with let
     // but calling p5 functions requires p5. namespace
-    let c = createCanvas(p5.windowWidth, p5.windowHeight)
+    let c = p5.createCanvas(p5.windowWidth, p5.windowHeight)
     // there is a reason for saving the canvas into a variable
     // so that we can style it at setup
     // for exaple the position on the screen
